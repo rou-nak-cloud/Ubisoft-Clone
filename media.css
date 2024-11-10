@@ -1,0 +1,203 @@
+
+@media screen and (max-width:992px) {
+    /* img */
+
+    /* .header-right img{
+        width: 600px;
+    } */
+    .participation-img>img{
+        width: 100%;
+        box-shadow: 0 0 25px #888;
+    }
+    /*  */
+
+    
+    .toggle-nav{
+        display: block;
+        margin-right: 20px;
+        font-size: 22px;
+    }
+    .main-nav{
+        overflow: initial;
+        /* this property will make the nav-links visible as they will become hidden due to overflow property of container  as container is the part of main nav*/
+    }
+    .nav-links{
+        /* display: none; */
+        position: absolute;
+        background-color: rgba(185, 236, 236, 0.629);
+        top: 100%;
+        left: -100%;
+        width: 50%;
+        padding-block: 50px;
+        border-radius: 20px;
+        font-weight: 500;
+    }
+    .nav-links.active{
+        left: 50%;
+    }
+    .nav-links>ul>li>a{
+        color: #000000;
+        font-size: 17px;
+    }
+    .nav-links>ul{
+        flex-direction: column;
+    }
+    .example-area{
+        gap: 10px;
+    }
+    .example-card{
+        /* width: 49%; */
+        width: calc(50% - 5px);
+        height: 280px;
+    }
+    .example{
+        padding-bottom: 15px;
+    }
+    .participation-text{
+        gap: 10px;
+    }
+    .participation{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .feature{
+        padding-top: 40px;
+        background-size: 80%;
+    }
+    .primary-button{
+        padding: 10px 30px;
+        font-size: 17px;
+    }
+    .secondary-button{
+        padding: 10px 30px;
+        font-size: 17px;
+    }
+    .big-feature{
+        padding-top: 70px;
+    }
+    .feature-description{
+        padding-left: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h3{
+        font-size: 1.4rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .header-section{
+        flex-direction: column-reverse;
+    }
+    .header-left{
+        max-width: 100vw;
+        text-align: center;
+    }
+    .primary-button{
+        width: 100%;
+    }
+    .button-box{
+        flex-direction: column;
+    }
+    .participation-container{
+        flex-direction: column-reverse;
+    }
+    .participation-text{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .participation-img{
+        padding-top: 20px;
+    }
+    .feature-cards{
+        min-width: 49%;
+    }
+    .features-area{
+       min-width: calc(49% - 10px);
+    }
+    .big-feature-section{
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+    }
+    #second-big-feature-img{
+        flex-direction: column;
+    }
+    .big-feature-padding-top{
+        padding-top: 50px;
+    }
+    .big-feature{
+        padding-top: 80px;
+    }
+    .feature-img img{
+        width: 90%;
+        /* background-position: center; */
+        padding-left: 80px;
+    }
+    .feature-description{
+        padding-top: 5px;
+        padding-left: 30px;
+        max-width: 70vw;
+    }
+    .example-header-text{
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+    .footer-container{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        align-items: center;
+    }
+    .link-coloumn{
+        align-items: stretch;
+        /* align-items: center; */
+    }
+    .link-coloumn>a{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    :root{
+        --padding-inline-section:10px;
+    }
+    h1{
+        font-size:2.2rem;
+    }
+    h2{
+        font-size: 2rem
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    .small-bold-text{
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
+    .toggle-nav{
+        margin-right: 40px;
+    }
+    .logos>img{
+        height: 35px;
+    }
+    .feature{
+        background-repeat: repeat;
+        background-size: 95%;
+        background-clip: content-box;
+    }
+    .example-card{
+        min-width: 100%;
+    }
+    .participation-container{
+        flex-direction: column;
+    }
+    .points{
+        margin-top: 20px;
+    }
+    .cta-section-header{
+        padding: var(--padding-inline-section);
+    }
+}
